@@ -1,0 +1,9 @@
+This is the test file for the file object 
+Reading and writing is done with the help of the file onjects 
+In this Python Tutorial, we will be learning how to read and write to files. 
+You will likely come into contact with file objects at some point while using Python, 
+so knowing how to read and write from them is extremely 
+important. We will learn how to read and write from simple 
+text files, open multiple files at once, and also how to 
+copy image binary files. Let's get started.
+

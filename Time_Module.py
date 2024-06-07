@@ -2,7 +2,7 @@ import datetime
 
 # there are 2 types of time 1 Naive and Aware 
 # naive is kind of overlook and don't need any detailed info opposite is aware 
-=======
+
 '''
 # there are 2 types of time 1 Naive and Aware 
 # naive is kind of overlook and don't need any detailed info opposite is aware 

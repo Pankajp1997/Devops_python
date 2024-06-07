@@ -1,9 +1,17 @@
 import datetime
+
+# there are 2 types of time 1 Naive and Aware 
+# naive is kind of overlook and don't need any detailed info opposite is aware 
+=======
 '''
 # there are 2 types of time 1 Naive and Aware 
 # naive is kind of overlook and don't need any detailed info opposite is aware 
+
 tday = datetime.date.today()
 print(tday)
+
+print(tday.year) # shows the
+=====================
 print(tday.year) # shows the year of the date 
 print(tday.month) # shows the year of the date
 print(tday.day) # shows the year of the date

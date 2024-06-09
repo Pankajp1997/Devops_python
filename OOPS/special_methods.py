@@ -20,6 +20,12 @@ class Employee:
     
     def __str__(self): # Meant to be more of a readable representation of an object and to be used as a display to the end user 
         return '{} - {}'.format(self.fullname(), self.email)
+    
+    def __add__(self,other):
+        return self.pay + other.pay
+    
+    def __len__(self):
+        return len(self.fullname())
 
 emp1 = Employee('Pankaj','Patil', 500000)
 emp2 = Employee('Akash','Patil', 100000)
@@ -34,3 +40,12 @@ emp2 = Employee('Akash','Patil', 100000)
 # print(1 + 2) # At the backend it uses __add__ Special method to do th addition
 #print(int.__add__(1,2))
 #print(str.__add__('a','b'))
+
+#print(len('test')) # this is also usingthe special method as __len__
+#print('test'.__len__())
+#print(emp1 + emp2)
+# emulate Numeric Objects 
+# https://docs.python.org/3/reference/datamodel.html
+# https://docs.python.org/3/reference/datamodel.html
+
+print(len(emp1))

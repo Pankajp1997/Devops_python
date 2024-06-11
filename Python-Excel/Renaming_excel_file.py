@@ -8,3 +8,20 @@ Ans:- It opens all the files present in the folder which having extensions .xlsx
 
 Modules Used here are OS, glob and Openpyxl 
 '''
+import os 
+import glob
+from openpyxl import load_workbook
+
+f = glob.glob('*.xlsx')
+
+for i in f:
+    wb = load_workbook(filename=i)
+    ws = wb.active
+    new_name = ws.cell(row=2,column=4).value
+    file_name = new_name + "custome_value.xlsx"
+
+    wb.close()
+    os.rename (i,file_name)
+
+    
+
